@@ -41,6 +41,9 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    background: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
 }
 
 .logo img {
@@ -105,31 +108,21 @@ body {
 
 .cta-buttons {
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
 }
 
-.cta-primary, .cta-secondary {
+.cta-primary {
     padding: 1rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
     transition: var(--transition);
     font-size: 1.1rem;
-}
-
-.cta-primary {
     background: var(--white);
     color: var(--primary-color);
 }
 
-.cta-secondary {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-}
-
-.cta-primary:hover, .cta-secondary:hover {
+.cta-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
